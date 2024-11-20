@@ -1,0 +1,202 @@
+[
+  {
+    "adventure_title": "Mountain Trek in the Himalayas",
+    "image": "https://i.ibb.co.com/4KhhWzf/Everest-Base-Camp-660x440.jpg",
+    "id": "1",
+    "category_name": "Mountain Treks",
+    "short_description": "Embark on a breathtaking trek through the majestic Himalayas, experiencing stunning views and local culture.",
+    "adventure_cost": "$1200",
+    "booking_availability": "Available Now",
+    "location": "Nepal, Himalayas",
+    "duration": "10 Days",
+    "adventure_level": "Moderate",
+    "included_items": ["Guide", "Meals", "Accommodation", "Transport"],
+    "eco_friendly_features": [
+      "Sustainable lodges",
+      "Local guides",
+      "Minimal waste policy"
+    ],
+    "max_group_size": 12,
+    "special_instructions": [
+      "Trekking shoes required",
+      "Physical fitness necessary",
+      "Carry reusable water bottles"
+    ]
+  },
+  {
+    "adventure_title": "Ocean Dive in the Great Barrier Reef",
+    "image": "https://i.ibb.co.com/3NXyZvW/images.jpg",
+    "id": "2",
+    "category_name": "Ocean Dives",
+    "short_description": "Dive into the crystal-clear waters of the Great Barrier Reef, exploring vibrant coral reefs and diverse marine life.",
+    "adventure_cost": "$800",
+    "booking_availability": "Available Now",
+    "location": "Australia, Great Barrier Reef",
+    "duration": "5 Days",
+    "adventure_level": "Easy",
+    "included_items": [
+      "Snorkel equipment",
+      "Guided dive tour",
+      "Accommodation"
+    ],
+    "eco_friendly_features": [
+      "Eco-certified diving operators",
+      "Coral restoration projects",
+      "Sustainable practices"
+    ],
+    "max_group_size": 6,
+    "special_instructions": ["Bring sunscreen", "No touching coral"]
+  },
+  {
+    "adventure_title": "Jungle Safari in Costa Rica",
+    "image": "https://i.ibb.co.com/ZGwcjRZ/image-processing20190607-4-133p60g.jpg",
+    "id": "3",
+    "category_name": "Wildlife Safaris",
+    "short_description": "Explore the diverse wildlife and lush jungles of Costa Rica, with opportunities for birdwatching and animal sightings.",
+    "adventure_cost": "$950",
+    "booking_availability": "Available Soon",
+    "location": "Costa Rica",
+    "duration": "7 Days",
+    "adventure_level": "Easy",
+    "included_items": ["Wildlife guide", "Meals", "Transport"],
+    "eco_friendly_features": [
+      "Responsible wildlife viewing",
+      "Conservation efforts",
+      "Eco-lodges"
+    ],
+    "max_group_size": 10,
+    "special_instructions": [
+      "Wear light clothing",
+      "Pack eco-friendly toiletries"
+    ]
+  },
+  {
+    "adventure_title": "Eco-Camping in Patagonia",
+    "image": "https://i.ibb.co.com/W2zd7Ck/26817226085-a8af4e0600-k.webp",
+    "id": "4",
+    "category_name": "Camping Adventures",
+    "short_description": "Set up camp in the pristine wilderness of Patagonia, surrounded by stunning landscapes and wildlife.",
+    "adventure_cost": "$600",
+    "booking_availability": "Available Now",
+    "location": "Argentina, Patagonia",
+    "duration": "6 Days",
+    "adventure_level": "Moderate",
+    "included_items": ["Tent", "Camping equipment", "Meals", "Guide"],
+    "eco_friendly_features": [
+      "Leave-no-trace camping",
+      "Eco-friendly campsite",
+      "Local food sourcing"
+    ],
+    "max_group_size": 8,
+    "special_instructions": ["Bring a sleeping bag", "Prepare for cold nights"]
+  },
+  {
+    "adventure_title": "Kayaking in the Amazon Rainforest",
+    "image": "https://i.ibb.co.com/Vpt8kHy/Portada-scaled.webp",
+    "id": "5",
+    "category_name": "Water Adventures",
+    "short_description": "Paddle through the heart of the Amazon, exploring the rich ecosystem and wildlife along the riverbanks.",
+    "adventure_cost": "$1100",
+    "booking_availability": "Available Now",
+    "location": "Brazil, Amazon River",
+    "duration": "4 Days",
+    "adventure_level": "Moderate",
+    "included_items": ["Kayak rental", "Wildlife guide", "Meals"],
+    "eco_friendly_features": [
+      "Eco-friendly kayaks",
+      "Environmental awareness programs",
+      "Support for local conservation projects"
+    ],
+    "max_group_size": 10,
+    "special_instructions": ["Wear water shoes", "No littering"]
+  },
+  {
+    "adventure_title": "Cycling Through the Swiss Alps",
+    "image": "https://i.ibb.co.com/2WSw0ts/images.jpg",
+    "id": "6",
+    "category_name": "Cycling Adventures",
+    "short_description": "Cycle through the picturesque Swiss Alps, enjoying scenic routes and eco-friendly transport.",
+    "adventure_cost": "$950",
+    "booking_availability": "Available Now",
+    "location": "Switzerland, Swiss Alps",
+    "duration": "5 Days",
+    "adventure_level": "Moderate",
+    "included_items": ["Bicycle rental", "Guide", "Meals"],
+    "eco_friendly_features": [
+      "Sustainable travel",
+      "Local food sourcing",
+      "Low carbon footprint"
+    ],
+    "max_group_size": 12,
+    "special_instructions": ["Pack for varied weather", "Bring sunscreen"]
+  },
+  {
+    "adventure_title": "Desert Safari in Morocco",
+    "image": "https://i.ibb.co.com/YNDFKzL/Safari-Morocco-Front-Photo-Travelen.jpg",
+    "id": "7",
+    "category_name": "Desert Adventures",
+    "short_description": "Experience the vast Sahara Desert in Morocco, with camel rides and a chance to camp under the stars.",
+    "adventure_cost": "$700",
+    "booking_availability": "Available Now",
+    "location": "Morocco, Sahara Desert",
+    "duration": "3 Days",
+    "adventure_level": "Easy",
+    "included_items": ["Camel ride", "Desert guide", "Meals"],
+    "eco_friendly_features": [
+      "Sustainable desert camps",
+      "Local community involvement",
+      "Energy-efficient transport"
+    ],
+    "max_group_size": 15,
+    "special_instructions": [
+      "Wear comfortable clothing",
+      "Prepare for hot temperatures"
+    ]
+  },
+  {
+    "adventure_title": "Glacier Hiking in Iceland",
+    "image": "https://i.ibb.co.com/MgXTrT7/images.jpg",
+    "id": "8",
+    "category_name": "Glacier Adventures",
+    "short_description": "Hike across Iceland's breathtaking glaciers, taking in the incredible ice formations and pristine landscapes.",
+    "adventure_cost": "$1300",
+    "booking_availability": "Available Now",
+    "location": "Iceland, Vatnajökull Glacier",
+    "duration": "7 Days",
+    "adventure_level": "Difficult",
+    "included_items": ["Guide", "Ice crampons", "Meals"],
+    "eco_friendly_features": [
+      "Carbon offset programs",
+      "Low impact hiking practices",
+      "Waste-free policies"
+    ],
+    "max_group_size": 6,
+    "special_instructions": [
+      "Wear warm clothing",
+      "Prepare for physically challenging terrain"
+    ]
+  },
+  {
+    "adventure_title": "Volcano Exploration in Costa Rica",
+    "image": "https://i.ibb.co.com/LPGh932/1-arenal-volcano.jpg",
+    "id": "9",
+    "category_name": "Volcano Adventures",
+    "short_description": "Explore Costa Rica's active volcanoes, hiking through lush forests and viewing impressive eruptions.",
+    "adventure_cost": "$950",
+    "booking_availability": "Available Soon",
+    "location": "Costa Rica, Arenal Volcano",
+    "duration": "6 Days",
+    "adventure_level": "Moderate",
+    "included_items": ["Guided tour", "Meals", "Transport"],
+    "eco_friendly_features": [
+      "Eco-lodges",
+      "Conservation-focused tours",
+      "Support for local communities"
+    ],
+    "max_group_size": 12,
+    "special_instructions": [
+      "Bring sturdy shoes",
+      "Prepare for hot and humid weather"
+    ]
+  }
+]
