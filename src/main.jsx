@@ -13,8 +13,10 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AuthProvider>
       <ToastContainer />
-      {/* <DynamicTitle /> */}
-      <RouterProvider router={router} />
+
+      <RouterProvider router={router}>
+        <DynamicTitle />
+      </RouterProvider>
     </AuthProvider>
   </StrictMode>
 );

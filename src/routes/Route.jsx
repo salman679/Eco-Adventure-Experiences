@@ -10,27 +10,39 @@ import MyProfile from "../pages/MyProfile";
 import ForgetPassword from "../layouts/ForgetPassword";
 import DashboardLayout from "../layouts/DashboardLayout";
 import UpdateProfilePage from "../pages/UpdateProfile";
+import DynamicTitle from "../components/DynamicTitle";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomeLayout />,
+    element: (
+      <>
+        <DynamicTitle />
+        <HomeLayout />
+      </>
+    ),
   },
   {
     path: "/adventures/:id",
     element: (
-      <PrivateRoute>
-        <DetailsPageLayout />
-      </PrivateRoute>
+      <>
+        <DynamicTitle />
+        <PrivateRoute>
+          <DetailsPageLayout />
+        </PrivateRoute>
+      </>
     ),
     loader: () => fetch("/adventure.json"),
   },
   {
     path: "/dashboard",
     element: (
-      <PrivateRoute>
-        <DashboardLayout />
-      </PrivateRoute>
+      <>
+        <DynamicTitle />
+        <PrivateRoute>
+          <DashboardLayout />
+        </PrivateRoute>
+      </>
     ),
     children: [
       {
@@ -49,7 +61,12 @@ export const router = createBrowserRouter([
   },
   {
     path: "/auth",
-    element: <AuthLayout />,
+    element: (
+      <>
+        <DynamicTitle />
+        <AuthLayout />
+      </>
+    ),
     children: [
       {
         path: "/auth/login",
@@ -67,6 +84,11 @@ export const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <NotFoundPage />,
+    element: (
+      <>
+        <DynamicTitle />
+        <NotFoundPage />
+      </>
+    ),
   },
 ]);
