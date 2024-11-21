@@ -3,7 +3,7 @@ import { useSearchParams, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AllContext";
 import { toast } from "react-toastify";
 
-const ForgetPassword = () => {
+export function ForgetPassword() {
   const [email, setEmail] = useState("");
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -55,6 +55,4 @@ const ForgetPassword = () => {
       </div>
     </div>
   );
-};
-
-export default ForgetPassword;
+}
