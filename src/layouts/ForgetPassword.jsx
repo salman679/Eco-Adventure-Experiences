@@ -3,14 +3,13 @@ import { useSearchParams, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AllContext";
 import { toast } from "react-toastify";
 
-export function ForgetPassword() {
+export default function ForgetPassword() {
   const [email, setEmail] = useState("");
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const { passwordReset } = useContext(AuthContext);
 
   useEffect(() => {
-    // Prefill email if passed from login page
     const emailParam = searchParams.get("email");
     if (emailParam) {
       setEmail(emailParam);
