@@ -55,9 +55,14 @@ const Header = () => {
               <Link to={"/"}>Home</Link>
             </li>
             {user && (
-              <li>
-                <Link to={"/dashboard/myProfile"}>Dashboard</Link>
-              </li>
+              <>
+                <li>
+                  <Link to={"/dashboard/myProfile"}>Profile</Link>
+                </li>
+                <li>
+                  <Link to={"/dashboard/update-profile"}>Update Profile</Link>
+                </li>
+              </>
             )}
           </ul>
         </div>
@@ -123,7 +128,7 @@ const Header = () => {
                   to="/dashboard/myProfile"
                   onClick={() => setShowSidebar(false)}
                 >
-                  Dashboard
+                  Profile
                 </Link>
               </li>
             )}
