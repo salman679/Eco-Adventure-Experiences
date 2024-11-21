@@ -123,14 +123,20 @@ const Header = () => {
               </Link>
             </li>
             {user && (
-              <li>
-                <Link
-                  to="/dashboard/myProfile"
-                  onClick={() => setShowSidebar(false)}
-                >
-                  Profile
-                </Link>
-              </li>
+              <>
+                <li>
+                  <Link
+                    to="/dashboard/myProfile"
+                    onClick={() => setShowSidebar(false)}
+                  >
+                    Profile
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to={"/dashboard/update-profile"}>Update Profile</Link>
+                </li>
+              </>
             )}
             {!user && (
               <li>
