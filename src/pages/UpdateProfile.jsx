@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../context/AllContext";
 
-const UpdateProfilePage = () => {
+export function UpdateProfilePage() {
   const { updateUserProfile } = useContext(AuthContext);
   const params = new URLSearchParams(window.location.search);
   const [displayName, setDisplayName] = useState(params.get("name") || "");
@@ -65,6 +65,4 @@ const UpdateProfilePage = () => {
       </form>
     </div>
   );
-};
-
-export default UpdateProfilePage;
+}
