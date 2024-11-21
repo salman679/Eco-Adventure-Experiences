@@ -21,20 +21,14 @@ const AdventureDetails = () => {
     return <p className="text-center py-16">Loading adventure details...</p>;
   }
 
-  const currentTime = moment().format("HH:mm");
-
-  console.log(currentTime);
-  console.log(
-    moment(currentTime, "HH:mm").isBetween("01:00", "23:59", null, "[)")
-  );
-
-  // Handle "Talk with Expert" button click
   const handleTalkWithExpert = () => {
-    if (moment(currentTime, "HH:mm").isBetween("01:00", "23:59", null, "[)")) {
-      // If current time is between 10:00 AM and 8:00 PM, open Google Meet
+    const currentTime = moment();
+    const startTime = moment("10:00 AM", "hh:mm A");
+    const endTime = moment("8:00 PM", "hh:mm A");
+
+    if (currentTime.isBetween(startTime, endTime)) {
       window.open("https://meet.google.com/", "_blank");
     } else {
-      // If outside valid time, show consultation time modal
       setShowModal(true);
     }
   };
