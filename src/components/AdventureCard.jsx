@@ -13,7 +13,7 @@ const AdventureCard = ({ adventure }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden animate__animated animate__bounceIn">
       <img
         src={adventure.image}
         alt={adventure.adventure_title}

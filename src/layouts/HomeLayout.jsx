@@ -6,15 +6,9 @@ import Testimonials from "../components/Testimonials";
 import AdventureSection from "../pages/AdventureSection";
 
 export default function HomeLayout() {
-  const isLoggedIn = true; // Replace with actual authentication state
-  const user = {
-    name: "John Doe",
-    photo: "https://via.placeholder.com/150", // Replace with actual user photo
-  };
-
   return (
     <>
-      <Header isLoggedIn={isLoggedIn} user={user} />
+      <Header />
       <Slider />
       <AdventureSection />
       <EcoAdventureBenefits />

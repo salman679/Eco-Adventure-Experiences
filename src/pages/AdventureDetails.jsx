@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import moment from "moment";
 
 const AdventureDetails = () => {
   const { id } = useParams();
   const [adventure, setAdventure] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     fetch("/adventure.json")
@@ -18,6 +20,24 @@ const AdventureDetails = () => {
   if (!adventure) {
     return <p className="text-center py-16">Loading adventure details...</p>;
   }
+
+  const currentTime = moment().format("HH:mm");
+
+  console.log(currentTime);
+  console.log(
+    moment(currentTime, "HH:mm").isBetween("01:00", "23:59", null, "[)")
+  );
+
+  // Handle "Talk with Expert" button click
+  const handleTalkWithExpert = () => {
+    if (moment(currentTime, "HH:mm").isBetween("01:00", "23:59", null, "[)")) {
+      // If current time is between 10:00 AM and 8:00 PM, open Google Meet
+      window.open("https://meet.google.com/", "_blank");
+    } else {
+      // If outside valid time, show consultation time modal
+      setShowModal(true);
+    }
+  };
 
   return (
     <section className="bg-gray-50 py-16">
@@ -74,9 +94,39 @@ const AdventureDetails = () => {
             <button className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
               Book Now
             </button>
+            {/* Talk with Expert Button */}
+            <button
+              onClick={handleTalkWithExpert}
+              className="bg-blue-500 text-white px-6 py-3 rounded-lg mt-4 hover:bg-blue-700 transition duration-300"
+            >
+              Talk with Expert
+            </button>
           </div>
         </div>
       </div>
+
+      {/* DaisyUI Modal for Consultation Time */}
+      <input
+        type="checkbox"
+        id="consultation-modal"
+        className="modal-toggle"
+        checked={showModal}
+        onChange={() => setShowModal(!showModal)}
+      />
+      <label htmlFor="consultation-modal" className="modal cursor-pointer">
+        <label className="modal-box relative" htmlFor="">
+          <h2 className="text-xl font-bold mb-4">Consultation Time</h2>
+          <p>
+            The expert is available from 10:00 AM to 8:00 PM. Please come back
+            during this time for a live consultation.
+          </p>
+          <div className="modal-action">
+            <label htmlFor="consultation-modal" className="btn btn-primary">
+              Close
+            </label>
+          </div>
+        </label>
+      </label>
     </section>
   );
 };

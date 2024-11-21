@@ -28,14 +28,11 @@ export default () => {
       className="mySwiper"
     >
       <SwiperSlide className="relative">
-        {/* <h5 className="absolute left-20 text-white font-bold text-3xl">
-          Salman
-        </h5> */}
         <div className="absolute left-20 text-left max-w-lg text-white">
-          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+          <h1 class="animate__animated animate__backInLeft text-4xl md:text-6xl font-bold mb-4">
             Discover Nature's Wonders
           </h1>
-          <p class="text-lg md:text-2xl mb-6">
+          <p class="text-lg md:text-2xl mb-6 animate__animated animate__backInLeft">
             Your eco-adventure awaits with breathtaking views and sustainable
             experiences.
           </p>
@@ -50,8 +47,10 @@ export default () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className="absolute left-20 text-left max-w-lg text-white">
-          <h1 class="text-4xl md:text-6xl font-bold mb-4">Explore the Wild</h1>
-          <p class="text-lg md:text-2xl mb-6">
+          <h1 class="animate__animated animate__backInLeft text-4xl md:text-6xl font-bold mb-4">
+            Explore the Wild
+          </h1>
+          <p class="text-lg md:text-2xl mb-6 animate__animated animate__backInLeft">
             Sustainable journeys for the adventurer in you.
           </p>
           <a
@@ -65,10 +64,10 @@ export default () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className="absolute left-20 text-left max-w-lg text-white">
-          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+          <h1 class="animate__animated animate__backInLeft text-4xl md:text-6xl font-bold mb-4">
             Eco-Exploration Redefined
           </h1>
-          <p class="text-lg md:text-2xl mb-6">
+          <p class="text-lg md:text-2xl mb-6 animate__animated animate__backInLeft">
             Connect, protect, and adventure with purpose.
           </p>
           <a
@@ -82,10 +81,10 @@ export default () => {
       </SwiperSlide>
       <SwiperSlide>
         <div className="absolute left-20 text-left max-w-lg text-white">
-          <h1 class="text-5xl md:text-7xl font-extrabold mb-4">
+          <h1 class="animate__animated animate__backInLeft text-5xl md:text-7xl font-extrabold mb-4">
             Reach New Heights
           </h1>
-          <p class="text-lg md:text-xl mb-6">
+          <p class="text-lg md:text-xl mb-6 animate__animated animate__backInLeft">
             Adventure awaits at every peak. Are you ready?
           </p>
           <a

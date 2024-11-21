@@ -4,6 +4,12 @@ import AuthLayout from "../layouts/AuthLayout";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import DetailsPageLayout from "../layouts/DetailsPageLayout";
+import NotFoundPage from "../components/NotFoundPage";
+import PrivateRoute from "./PrivateRoute";
+import MyProfile from "../pages/MyProfile";
+import ForgetPassword from "../layouts/ForgetPassword";
+import DashboardLayout from "../layouts/DashboardLayout";
+import UpdateProfilePage from "../pages/UpdateProfile";
 
 export const router = createBrowserRouter([
   {
@@ -12,8 +18,34 @@ export const router = createBrowserRouter([
   },
   {
     path: "/adventures/:id",
-    element: <DetailsPageLayout />,
+    element: (
+      <PrivateRoute>
+        <DetailsPageLayout />
+      </PrivateRoute>
+    ),
     loader: () => fetch("/adventure.json"),
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        <DashboardLayout />
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        path: "/dashboard/myProfile",
+        element: <MyProfile />,
+      },
+      {
+        path: "/dashboard/update-profile",
+        element: (
+          <PrivateRoute>
+            <UpdateProfilePage />
+          </PrivateRoute>
+        ),
+      },
+    ],
   },
   {
     path: "/auth",
@@ -27,10 +59,14 @@ export const router = createBrowserRouter([
         path: "/auth/register",
         element: <Register />,
       },
+      {
+        path: "/auth/forget-password",
+        element: <ForgetPassword />,
+      },
     ],
   },
   {
     path: "*",
-    element: <p>Error</p>,
+    element: <NotFoundPage />,
   },
 ]);
